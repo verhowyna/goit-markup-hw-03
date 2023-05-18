@@ -13,6 +13,29 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
 .list {
   list-style: none;
 }
@@ -48,10 +71,6 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
-}
-
-.address {
-  font-style: normal;
 }
 
 .address-link {
