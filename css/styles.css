@@ -7,12 +7,6 @@
   --second-background-color: #f4f4fd;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-}
-
 h1,
 h2,
 h3,
@@ -36,6 +30,10 @@ address {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
 }
@@ -44,7 +42,32 @@ address {
   text-decoration: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* -------- HEADER -------- */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -54,10 +77,17 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-studio {
   color: var(--first-title-color);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-link {
@@ -71,6 +101,12 @@ address {
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .address-link {
@@ -90,13 +126,24 @@ address {
 
 .hero {
   background-color: var(--first-background-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-title {
   font-size: 56px;
+  width: 496px;
+  height: 120px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 0 auto;
   color: var(--second-title-color);
 }
 .hero-btn {
@@ -107,7 +154,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  margin-top: 48px;
 }
 
 .hero-btn:hover,
@@ -116,6 +166,18 @@ address {
 }
 
 /* -------- FEATURES -------- */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.feature-wrap {
+  display: flex;
+  align-items: flex-start;
+  width: calc((100 - 24 * 3) / 4);
+  gap: 24px;
+}
 
 .feature-title {
   font-weight: 500;
@@ -133,6 +195,10 @@ address {
 }
 
 /* -------- SECTION 2 -------- */
+
+.section-two {
+  padding-bottom: 120px;
+}
 
 .section-title {
   font-size: 36px;
@@ -178,7 +244,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  cursor: pointer;
 }
 
 .btn-item:hover,
