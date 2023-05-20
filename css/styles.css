@@ -81,7 +81,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 24px 0;
   margin-right: 76px;
 }
 
@@ -93,6 +92,9 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.nav-item {
   padding: 24px 0;
 }
 
