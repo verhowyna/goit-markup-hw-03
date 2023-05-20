@@ -84,10 +84,6 @@ body {
   margin-right: 76px;
 }
 
-.nav-item {
-  padding: 24px 0;
-}
-
 .logo-studio {
   color: var(--first-title-color);
 }
@@ -96,6 +92,7 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -360,11 +357,6 @@ body {
   background-color: var(--first-background-color);
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-logo {
